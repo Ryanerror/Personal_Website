@@ -1,18 +1,34 @@
+/* Home page */
+
 .home{
     background-image: url("Images/backround.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow: hidden;
-    height: 100%;
-    width: 100%;
-    left: 0;
-    top: 0;
-    position: fixed;
+    background-size:cover;
+    height: 100vh;
+    position:relative;
     color: white;
+    margin: 0;
+    padding: 0;
+    top:0px;
+    right:0px;
+    bottom:0px;
+    left:0px;
+
+    display: block;
    
+}
+
+.home h1{
+    width: 800px;
+    height: 200px; 
+    text-align: center;
+         
+    transform: translate(40%, 185%);
+    transform: translate(40%, 185%);
     
    
 }
+
+
 
 
 /* Menu bar  */
@@ -21,7 +37,6 @@
     float: right;
 
 }
-
 
 
 .menu ul li{
@@ -40,3 +55,8 @@
 .menu ul li a:hover{
     color: white;
 }
+
+
+
+/* About page */
+
