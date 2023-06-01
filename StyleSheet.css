@@ -1,11 +1,39 @@
+
+
+/* @media all and (max-width: 1000px) and (min-width: 800px) { */
+
+html, body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+}
+body{
+    padding: 0;
+    margin: 0;
+    background-color:rgb(16, 14, 23);
+
+}
+
+main{
+    height: calc(100% - 80px); /* Adjust the height based on your header height */
+    overflow-y: auto;
+}
+
+ 
 /* Home page */
 
 .home{
     background-image: url("Images/backround.webp");
     background-size:cover;
-    height: 100vh;
     position:relative;
     color: white;
+
+    height: 100%;
+    overflow: hidden;
+
     margin: 0;
     padding: 0;
     top:0px;
@@ -13,60 +41,54 @@
     bottom:0px;
     left:0px;
 
-    display: block;
-   
+    
+
 }
 
 .home h1{
-    width: 800px;
-    height: 200px; 
     text-align: center;
-         
-    transform: translate(40%, 185%);
-    
-    
-   
-}
 
+}
 
 
 
 /* Menu bar  */
-.menu{
+header{
     top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+
+}
+
+header #logo{
+    float: left;
+
+}
+
+nav {
+    padding: 30px;
     float: right;
-    width: max-content;
-
 }
 
-
-.menu ul li{
-    display: inline-block;
-   
-
-}
-.menu ul li a{
-    display: block;
-    padding: 10px 20px; 
+nav a {
+    margin: 0 10px;
     color: darkgrey;
+    text-decoration: none;
+    font-size: 18px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
 }
 
-.menu ul li a:hover{
+nav a:hover{
     color: white;
 }
 
 
-.titleName{
-   
-
-    float: left;
-
-    
-
-}
-
-
 /* About page */
+
+
+
+
+
 
