@@ -1,11 +1,18 @@
-function getWindowWidth(){
-    var w = window.innerWidth;
-    return w;
+const links = document.querySelectorAll("a");
+
+for (const link of links) {
+  link.addEventListener("click", clickHandler);
 }
 
-function getWindowHeight(){
-    var h = window.innerHeight;
-    return h;
+function clickHandler(e) {
+  e.preventDefault();
+  const href = this.getAttribute("href");
+  const offsetTop = document.querySelector(href).offsetTop;
+
+  scroll({
+    top: offsetTop,
+    behavior: "smooth"
+  });
 }
 
 

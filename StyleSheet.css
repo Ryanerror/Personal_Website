@@ -22,35 +22,6 @@ main{
     overflow-y: auto;
 }
 
- 
-/* Home page */
-
-.home{
-    background-image: url("Images/backround.webp");
-    background-size:cover;
-    position:relative;
-    color: white;
-
-    height: 100%;
-    overflow: hidden;
-
-    margin: 0;
-    padding: 0;
-    top:0px;
-    right:0px;
-    bottom:0px;
-    left:0px;
-
-    
-
-}
-
-.home h1{
-    text-align: center;
-
-}
-
-
 
 /* Menu bar  */
 header{
@@ -83,12 +54,62 @@ nav a {
 nav a:hover{
     color: white;
 }
+ 
+/* Home page */
+
+.home{
+    background-image: url("Images/backround.webp");
+    background-size:cover;
+    position:relative;
+    color: white;
+
+    height: 100%;
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+    top:0px;
+    right:0px;
+    bottom:0px;
+    left:0px;
+
+    
+
+}
+
+.home, h1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+
+}
+
+
 
 
 /* About page */
 
 
+.about{
+    background-color: #1a1527;
+    background-size:cover;
+    position:relative;
+    height: 100%;
+    overflow: hidden;
 
+
+}
+
+.about, h1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: white;
+
+}
 
 
 
